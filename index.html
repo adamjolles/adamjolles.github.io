@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1800 Baltimore Avenue, Kansas City, MO</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; }
+        .pdf-container { position: relative; width: 100%; height: 100%; }
+        .pdf-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+    </style>
 </head>
 <body>
-    <div style="width: 100%; height: 100vh;">
-        <iframe src="pdf/1800compressed.pdf" width="100%" height="100%" style="border: none;"></iframe>
+    <div class="pdf-container">
+        <iframe src="pdf/1800compressed.pdf" allowfullscreen webkitallowfullscreen></iframe>
     </div>
 </body>
 </html>
